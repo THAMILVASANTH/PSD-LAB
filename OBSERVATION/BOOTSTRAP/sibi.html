@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+
+ 	background-image:url("C:/Users/thami/Downloads/390.jpg");
+             background-size: 100% 100%
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'poppins',sans-serif;
+
+}
+
+
+/*---navbar---*/
+
+*{color:white;}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    background: white;
+
+}
+
+
+
+.bold{
+    font-size: 25px;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    padding: 5px;
+    
+}
+.nav-link{
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 2px solid blue;
+    transition: 0.2s;
+}
+/*----home---*/
+
+span{
+    color: orange;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+}
+#about img{
+    border-radius: 50px;
+    width: 25rem;
+    height: 25rem;
+}
+.card img{
+    height: 200px;
+}
+.inner{
+    overflow: hidden;
+}
+
+.card img:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+/*----contact---*/
+form{
+    padding: 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2),
+                2px 2px 5px rgba(0,0,0,.05);
+    border-radius: 30px;
+}
+
+    </style>
+</head>
+<body style="background-color:red;">
+
+    <!----navbar-->
+    <div class="container-fluid col-10"> 
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <b class="bold" style="color">My Page</b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                  </svg>
+            </button>
+            <div class="collapse navbar-collapse" id=menu>
+                <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+               <a class="nav-link" href="menu.html">Menu</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="avatar.html">Logo in</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#Services">Services</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#contact">Contact</a>
+               </li>
+               </ul>
+        </nav>
+
+        <section id="Home">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 pt-5">
+                    <h1 class="display-3">Welcome to <span>KTM Web Page</span></h1>
+                    <p class="my-lg-2 my-3">KTM AG (Kronreif & Trunkenpolz Mattighofen) formerly KTM Sportmotorcycle AG) is an Austrian motorcycle, bicycle and sports car manufacturer
+ owned by Pierer Mobility AG and the Indian manufacturer Bajaj Auto. It was formed in 1992 but traces its foundation to as early as 1934. Today, KTM AG is the parent company of the 
+KTM Group, consisting of a number of motorcycle brands.
+                    </p>
+                    <a href="#about" type="button" class="btn btn-warning my-lg-3 my-3">Get Started</a>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3">
+                <img src="C:/Users/thami/Downloads/store.png" class="img-fluid">
+
+            </div>
+        </section>
+
+        <!---about-->
+        <section id="about">
+            <div class="row">
+                 <div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3">
+                    <img src="C:/Users/thami/Downloads/duke.gif" class="img-fluid">
+
+            </div>
+            <div class="col-lg-6 col-md-6col-12 pt-5">
+                <h6 style="font-size: 50px;">ABOUT US</h6>
+                <h1 class="display-3">Website</h1>
+                <p>Presenting KTM Bikes,Fastest Growing European Motocycle! Chech KTM's range,on-road price,KTM features,events,upcoming KTM launches and more.
+                    
+                </p>
+                <a href="#Services" type="button" class="btn btn-primary my-lg-3 my-3">Services</a>
+                
+            </div>
+        </section>
+             <!--Services--> 
+        <section id="Services">
+            <div class="row">
+                <h1 class="text-center"> OUR SERVICES</h1>
+                <div class="col-md-4 my-2">
+                    <div class="card shadow">
+                        <div class="inner">
+                            <img src="C:/Users/thami/Downloads/200.avif" class="card-img-top">
+                        </div>
+            
+                    </div class="card-body">
+                        <h5 class="card-title"> Responsive Website</h5>
+                        <div class="card-text">Enter the 17-digit VIN(Vehicle Identification Number) of your motorcycle and the sequential number of your delivery certificate. 
+You will then see the service history of your motorcycle and whether your motorcycle is subject to any current manufactuer recalls or safety warnings, if so please contact your
+ nearest authorized KTM dealer immediately.</div>
+                        <a href="#contact" type="button" class="btn btn-success my-lg-3 my-3">Contact Us</a>
+                    </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+                
+        
+        </section>
+        <!----contact-->
+
+        <section id="contact">
+            <div class="col-lg-4 col-md-6 col-12">
+                <form>
+                    <div class="mb-3 text-center">
+                        <h3 class="py-lg-1 py-3">CONTACT FORM</h3>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" required class="form-control" placeholder="Enter your Name">
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">User ID</label>
+                        <input type="text" required class="form-control"  placeholder="User-Id">
+
+                    </div>
+				 <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" required class="form-control"  placeholder=".........">
+
+				</div>
+                    <div class="col-lg-6 py-lg-2 py-3">
+                        <button class="btn btn-primary required">Submit</button>
+                        
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <table class="table table-dark table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">s.no</th>
+                <th scope="col">place</th>
+                <th scope="col">contact no</th>
+                <th scope="col">Mail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Erode</td>
+                <td>90457 82341</td>
+                <td>ktmstore.erode@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Comibatore</td>
+                <td>80456 62417</td>
+                <td>ktmstore.comib@gamil.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Chennai</td>
+                <td>95836 77426</td>
+                <td>ktmstore.chennai@gmail.com</td>
+              </tr>
+	       <tr>
+                <th scope="row">4</th>
+                <td>Madurai</td>
+                <td>63801 77446</td>
+                <td>ktmstore.madurai@gmail.com</td>
+              </tr>
+	      <tr>
+                <th scope="row">5</th>
+                <td>Selam</td>
+                <td>83241 44476</td>
+                <td>ktmstore.selam@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
